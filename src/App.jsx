@@ -12,10 +12,12 @@ import Join from "./Components/Join";
 import Testimonials from "./Components/Testimonials";
 import Fotter from "./Components/Fotter";
 import Navbar from "./Components/Navbar";
+import { Head_nav } from "./Components/Head_nav";
 
 export default function App() {
   return (
     <>
+    <Head_nav/>
     <Navbar/>
     <Header/>
     <About/>

@@ -5,8 +5,8 @@ const Navbar = () => {
     return (
         <>
         
-        {/*  */}
-            <div className="max-w-[90%] mx-auto fixed bottom-[15px] left-0 right-0  w-full   border border[black] bg-[#F5F5F5] rounded-full  z-[1]">
+
+            <div className="max-w-[90%] hidden md:block mx-auto fixed bottom-[15px] left-0 right-0  w-full   border border[black] bg-[#F5F5F5] rounded-full  z-[1]">
                 <nav>
                     <ul className='flex justify-between px-2 py-2'>
                         <li className=' rounded-full hover:text-[#FFF] px-4 py-1 lg:text-p md:text-tp sm:text-mp hover:bg-[#00B2FF] active:bg-[#00B2FF] ' >Home

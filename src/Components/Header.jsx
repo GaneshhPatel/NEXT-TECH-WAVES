@@ -9,8 +9,8 @@ const Header = () => {
     loop: {},
   });
   return (
-    <div>
-      <div className="py-[20px]">
+    <div id='home'>
+      <div className="py-[20px] hidden md:block">
         <img src="logo/next tech waves logo.png" alt='' className=" mx-auto" />
       </div>
 
