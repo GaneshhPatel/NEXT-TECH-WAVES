@@ -4,7 +4,7 @@ import React from 'react'
 const Creativeshowcase = () => {
     return (
         <>
-            <div className>
+            <div className='max-w-[1340px] mx-auto'>
                 <div className="my-5">
                     <p className="text-center text-[#00B2FF]  sm:text-tt  xs:text-mt md:text-title font-[600] py-2">Explore Our
                         Creative Showcase</p>

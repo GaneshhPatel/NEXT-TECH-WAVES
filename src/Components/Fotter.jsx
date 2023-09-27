@@ -4,7 +4,7 @@ import React from 'react'
 const Fotter = () => {
     return (
         <div>
-            <div className=" xs:max-w-[99%] md:max-w-[95%] mx-auto py-5 mt-6 sm:grid grid-cols-2 gap-4 px-4">
+            <div className="max-w-[1340px] mx-auto xs:max-w-[99%] md:max-w-[95%] md:mb-[60px] mx-auto py-5 mt-6 sm:grid grid-cols-2 gap-4 px-4">
                 <div className>
                     <div>
                         <img src="logo/next tech waves logo.png" alt />

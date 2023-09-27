@@ -10,7 +10,7 @@ export const Head_nav = () => {
   };
   return (
     <>
-     <nav className="bg-gray-200 block md:hidden  p-4 ">
+     <nav className="bg-gray-50 block md:hidden  my-2 ">
       <div className=" mx-auto flex justify-between items-center">
       <div className="md:hidden">
           {/* Mobile menu button */}
