@@ -1,16 +1,26 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 import  { useState } from 'react';
 
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 export const Head_nav = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
   return (
     <>
-     <nav className="bg-gray-50 block md:hidden  my-2 ">
+     <nav className="bg-gray-50 block md:hidden  my-2 px-4 " data-aos="fade-down">
       <div className=" mx-auto flex justify-between items-center">
       <div className="md:hidden">
           {/* Mobile menu button */}

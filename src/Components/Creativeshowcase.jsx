@@ -1,10 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Creativeshowcase = () => {
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
     return (
         <>
-            <div className='max-w-[1340px] mx-auto'>
+            <div className='max-w-[1340px] mx-auto' data-aos="fade-up">
                 <div className="my-5">
                     <p className="text-center text-[#00B2FF]  sm:text-tt  xs:text-mt md:text-title font-[600] py-2">Explore Our
                         Creative Showcase</p>
@@ -13,7 +23,7 @@ const Creativeshowcase = () => {
                         UI/UX Designs and Web Templates, Crafted for Excellence.</p>
                 </div>
                 <div className=" py-2">
-                    <div className="md:max-w-[80%] border-2 bg-[#F5F5F5] rounded-[20px] mx-auto py-2  text-center">
+                    <div className="md:max-w-[80%]  bg-[#F5F5F5] rounded-[20px] mx-auto py-2  text-center">
                         <nav className="container mx-auto  items-center">
                             <ul className="space-x-4 grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4  ">
                                 <li className="my-2 md:my-0"><a href="#" className=" text-[#494949]  hover:text-[#fff] hover:bg-[#00B2FF] active:bg[#4E6BFF] px-6 py-2 rounded-full xs:border-2 sm:border-none">All
@@ -30,7 +40,7 @@ const Creativeshowcase = () => {
                     <div className=" my-6 px-[10px]">
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 xs:grid-cols-1 gap-1">
                             <div className>
-                                <img src="images/creative1.png" alt='loading image' />
+                                <img src="images/creative1.png" alt='loading image' className='hover:opacity-[0.7] '  />
                             </div>
                             <div className>
                                 <img src="images/creative2.png" alt='loading image' />

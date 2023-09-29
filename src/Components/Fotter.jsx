@@ -1,10 +1,22 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Fotter = () => {
+
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
     return (
         <div>
-            <div className="max-w-[1340px] mx-auto xs:max-w-[99%] md:max-w-[95%] md:mb-[60px] mx-auto py-5 mt-6 sm:grid grid-cols-2 gap-4 px-4">
+            <div className="max-w-[1340px] mx-auto xs:max-w-[99%] md:max-w-[95%] md:mb-[60px] mx-auto py-5 mt-6 sm:grid grid-cols-2 gap-4 px-4" data-aos="fade-up">
                 <div className>
                     <div>
                         <img src="logo/next tech waves logo.png" alt />

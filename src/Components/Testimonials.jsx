@@ -1,11 +1,21 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 
 const Testimonials = () => {
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
   return (
     <>
-         <div className="max-w-[1340px] mx-[15px]  my-6 ">
+         <div className="max-w-[1340px] mx-[15px]  my-6 " data-aos="fade-up">
   <h1 className="text-center text-[#00B2FF]  sm:text-tt  xs:text-mt md:text-title font-[600] ">Client’s
     Testimonials</h1>
   <p className=" pt-4 sm:text-mp xs:text-tp md:text-p md:text-center text-[#494949] lg:max-w-[60%] mx-auto">We

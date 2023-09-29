@@ -1,10 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-
+import React, { useEffect } from 'react'
+ 
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 const Founder = () => {
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
   return (
     <>
-       <div className="max-w-[1340px] mt-8 my-6 md:px-[15px] px-4 mx-auto">
+       <div className="max-w-[1340px] mt-8 my-6 md:px-[15px] px-4 mx-auto" data-aos="fade-up">
   <p className="text-[#00B2FF]  sm:text-tt  xs:text-mt md:text-title md:text-center text-left font-[600]  ">
     Meet
     With Our Company founder &amp; CEO</p>

@@ -1,10 +1,21 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
+    useEffect(() => {
+      AOS.init({
+          offset:100,
+          duration: 1500,
+          easing: 'ease-in-out',
+          once: true,
+      });
+  }, []);
   return (
 <>
-  <div className="max-w-[1340px] lg:p-9 grid lg:grid-cols-3 mx-auto px-[15px] " id='about'>
+  <div className="max-w-[1340px] lg:p-9 grid lg:grid-cols-3 mx-auto px-[15px] " id='about' data-aos="fade-up">
     <div className=" flex gap-2  mx-auto">
       <div className>
         <img src="images/about-I.png" className="rounded lg:my-5 xs:my-2" />

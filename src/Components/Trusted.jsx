@@ -1,10 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import AOS from 'aos';
+  import 'aos/dist/aos.css';
 const Trusted = () => {
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
   return (
     <>
-         <div className="max-w-[1340px] my-[20px]">
+         <div className="max-w-[1340px] my-[20px]" data-aos="fade-up">
   <div className="text-[#00B2FF] text-center sm:text-tt  xs:text-mt md:text-title font-[600] mb-4">
     <p>Trusted By Brand’s</p>
   </div>

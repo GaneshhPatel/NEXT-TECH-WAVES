@@ -1,10 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
+    useEffect(() => {
+      AOS.init({
+          offset:100,
+          duration: 1500,
+          easing: 'ease-in-out',
+          once: true,
+      });
+  }, []);
   return (
     <>
-       <div className="max-w-[1340px] mx-auto bg-[url(images/Contact.png)] bg-no-repeat bg-cover object-contain my-[40px]">
+       <div className="max-w-[1340px] mx-auto bg-[url(images/Contact.png)] bg-no-repeat bg-cover object-contain my-[40px]" data-aos="fade-up">
   <div className="text-center">
     <p className="text-[#00B2FF] text-center sm:text-tt  xs:text-mt md:text-title font-[600]">Contact Us</p>
     <p className="sm:text-mp xs:text-tp md:text-p text-[#494949]">We would be more than happy to speak with you.

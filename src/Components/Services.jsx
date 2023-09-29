@@ -1,10 +1,20 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Services = () => {
+      useEffect(() => {
+        AOS.init({
+            offset:100,
+            duration: 1500,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    }, []);
     return (
         <>
-            <div className="max-w-[1340px] mx-auto xs:mt-5 lg:mt-20 bg-[url(images/bg-sub.png)] bg-no-repeat bg-cover py-8 md:px-[25px]">
+            <div className="max-w-[1340px] mx-auto xs:mt-5 lg:mt-20 bg-[url(images/bg-sub.png)] bg-no-repeat bg-cover py-8 md:px-[25px]" data-aos="fade-up">
                 <div className=" xs:text-center md:text-left">
                     <h1 className="text-[#00B2FF] font-[600]  sm:text-tt  xs:text-mt md:text-title mb-4 xs:border-2 md:border-none">
                         Services
